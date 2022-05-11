@@ -153,7 +153,7 @@ export default class ToggleSwitch extends React.Component {
 
     let toValue;
     if (!I18nManager.isRTL && isOn) {
-      toValue = this.dimensions.width - this.dimensions.translateX;
+      toValue = this.dimensions.width - this.dimensions.translateX - 4;
     } else if (I18nManager.isRTL && isOn) {
       toValue = -this.dimensions.width + this.dimensions.translateX;
     } else {
